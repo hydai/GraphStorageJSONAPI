@@ -13,8 +13,8 @@ public class GraphStorage {
 		points = new ArrayList<Point>();
 		lines = new ArrayList<Line>();
 	}
-	public void addPoint(int x, int y) {
-		Point pt = new Point(x, y);
+	public void addPoint(int x, int y, int color) {
+		Point pt = new Point(x, y, color);
 		points.add(pt);
 	}
 	public int addLine() {
