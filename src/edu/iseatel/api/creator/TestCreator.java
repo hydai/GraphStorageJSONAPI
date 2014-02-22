@@ -7,10 +7,12 @@ public class TestCreator {
 	public static void main(String[] args) {
 		GraphStorage graphStorage = new GraphStorage();
 		graphStorage.getInfo().setUsernameString("hydai");
-		for (int i = 0; i < 10; i++) {
-			for (int j = 0; j < 5; j++) {
-				for (int k = 123; k < 130; k++) {
-					graphStorage.addPoint(i, j, k, k);
+		for (int i = 0; i < 3; i++) {
+			for (int j = 3; j > 0; j--) {
+				for (int k = 125; k < 130; k++) {
+					for (int l = 12; l > 10; l--) {
+						graphStorage.addPoint(i, j, k, l);
+					}
 				}
 			}
 		}
