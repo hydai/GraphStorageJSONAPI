@@ -20,7 +20,7 @@ public class Line {
 		this.groupID = groupID;
 	}
 	public void addPoint(int x, int y) {
-		Point pt = new Point(x, y, 0);
+		Point pt = new Point(x, y, 0, 0);
 		pointList.add(pt);
 	}
 	public ArrayList<Point> getPointList() {

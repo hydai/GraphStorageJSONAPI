@@ -1,31 +1,39 @@
 package edu.iseatel.api;
 
 public class Point {
-	private int x, y;
-	private int color;
+	private float x, y;
+	private int color, action;
 	public Point() {
 		color = 0;
+		action = 0;
 		x = y = -1;
 	}
-	public Point(int x, int y, int color) {
+	public Point(float x, float y, int action, int color) {
 		this.x = x;
 		this.y = y;
+		this.action = action;
 		this.color = color;
 	}
-	public int getX() {
+	public float getX() {
 		return x;
 	}
-	public int getY() {
+	public float getY() {
 		return y;
 	}
 	public int getColor() {
 		return color;
 	}
-	public void setX(int x) {
+	public int getAction() {
+		return action;
+	}
+	public void setX(float x) {
 		this.x = x;
 	}
-	public void setY(int y) {
+	public void setY(float y) {
 		this.y = y;
+	}
+	public void setAction(int action) {
+		this.action = action;
 	}
 	public void setColor(int color) {
 		this.color = color;

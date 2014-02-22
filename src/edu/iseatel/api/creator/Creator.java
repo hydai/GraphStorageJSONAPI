@@ -41,14 +41,18 @@ public class Creator {
 	}
 	private String loadPoints() {
 		String pointString = "";
-		pointString = pointString + "\"point\":{";
+		pointString = pointString + "\"point\":[";
 		for (int i = 0; i < points.size(); i++) {
 			if (i >= 1) {
 				pointString = pointString + ",";
 			}
-			pointString = pointString + "[" + points.get(i).getX() + "," + points.get(i).getY() + "," + points.get(i).getColor() + "]";
+			pointString = pointString + "[" 
+						+ points.get(i).getX() + "," 
+						+ points.get(i).getY() + "," 
+						+ points.get(i).getAction() + ","
+						+ points.get(i).getColor() + "]";
 		}
-		pointString = pointString + "}";
+		pointString = pointString + "]";
 		return pointString;
 	}
 	public String getJsonOutputString() {

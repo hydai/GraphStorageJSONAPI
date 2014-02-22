@@ -10,7 +10,7 @@ public class TestCreator {
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 5; j++) {
 				for (int k = 123; k < 130; k++) {
-					graphStorage.addPoint(i, j, k);
+					graphStorage.addPoint(i, j, k, k);
 				}
 			}
 		}
